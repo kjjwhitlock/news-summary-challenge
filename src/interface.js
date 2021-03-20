@@ -1,0 +1,1 @@
+var news = new News()
