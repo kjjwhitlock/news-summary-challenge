@@ -8,26 +8,12 @@
     <script defer src="spec/testFramework.js"></script>
   </head>
   <body>
-    <title> Guardian selects </title>
-    <h1>News summary for busy politicians</h1>
-    <script>
-      function getPostData() {
-  return fetch("https://jsonplaceholder.typicode.com/posts/1").then(response => {
-    return response.json();
-  })
-}
+    <div id = main>
+      </div>
+      <h1></h1>
+      <p></p>
 
-function renderPost(postData) {
-  let postHeadingHTML = `<h1>${postData.title}</h1>`;
-  let postWithLinebreaksHTML = postData.body.replaceAll("\n", "<br>\n");
-  let postBodyHTML = `<p>${postWithLinebreaksHTML}</p>`;
-  return `${postHeadingHTML}${postBodyHTML}`;
-}
-
-getPostData().then(post => {
-  let rendered = renderPost(post);
-  document.getElementById("main").innerHTML = rendered;
-});
+    <script src="src/interface.js">
 
     </script>
   </body>
